@@ -1,0 +1,98 @@
+.kutu {
+    display: flex;
+    justify-content: center;  /* Kutuları yatay ortala */
+    align-items: center;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .counter-container {
+    display: flex;  /* Kutuları yan yana diz */
+    gap: 200px;  /* Kutular arasında boşluk bırak */
+    font-size: 20px;
+   
+  }
+  
+  .counter-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: center;
+    width: 150px;  /* Kutu genişliği */
+    height: 80px;  /* Kutu yüksekliği */
+    text-align: center; /* Yazıları ortala */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+  }
+  
+  h1 {
+    margin: 0; /* Varsayılan boşlukları kaldır */
+    font-size: 50px; /* Yazı büyüklüğü */
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    
+  }
+  
+  .counter {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(34, 29, 29);
+    margin-top: 3px;  /* Sayıyı biraz aşağı kaydır */
+  }
+  .alt-kutu {
+    width: 100%;
+    max-width: 1500px;
+    height: 500px;
+    background-color: rgb(68, 66, 66);
+    display: flex;
+    justify-content: space-between; /* Sağ ve solu ayır */
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* LOGO VE İKONLAR SOLDA */
+
+.logo {
+    height: 150px;
+    width: auto;
+    display:block ;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* İKONLAR LOGO'NUN ALTINDA OLACAK */
+.ikonlar {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.ikonlar a i {
+    font-size: 30px;
+    color: white;
+}
+
+/* KATEGORİ LİSTESİ SAĞA YASLANACAK */
+.kategori {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.kategori ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kategori ul li {
+    margin-bottom: 10px;
+}
+
+.kategori ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
